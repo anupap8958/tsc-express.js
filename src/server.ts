@@ -8,7 +8,7 @@ import bookRoutes from "./routes/Book";
 
 const router = express();
 
-/** Connect to MongoDB */
+/** Connect to MongoDB */ ////
 mongoose
     .connect(config.mongo.url, { retryWrites: true, w: 'majority' })
     .then(() => {
